@@ -13,7 +13,7 @@ use crate::Row;
 
 #[derive(Debug)]
 pub struct DataSet<T: Presto> {
-    types: Vec<(String, PrestoTy)>,
+    pub types: Vec<(String, PrestoTy)>,
     data: Vec<T>,
 }
 
